@@ -7,7 +7,7 @@ import json
 import os
 import random
 import numpy as np
-from dataset_helper import compute_mean_ir
+from .dataset_helper import compute_mean_ir
 
 def weighted_shuffle_ind(weights):
     ind = list(range(len(weights)))

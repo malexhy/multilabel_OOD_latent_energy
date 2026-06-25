@@ -113,9 +113,9 @@ if __name__ == "__main__":
     ]
     parser = argparse.ArgumentParser("EMB LR")
     
-    parser.add_argument("--eval_path", type=str, default='./save/weight_0', help='Path to eval.')
+    parser.add_argument("--eval_path", type=str, default='./save/weight_1/final', help='Path to eval.')
     parser.add_argument("--remove_non_best", type=int, default=0, choices=[0,1], help='Remove non best weight for saving hard drive memory.')
-    parser.add_argument("--weight_path", type=str, default='best_mAP', help='Weight eval.', choices=ACCEPT_WEIGHT, help='Specific .pt weigth to eval. Default "best_mAP" choose the weight with the best val "mAP".')
+    parser.add_argument("--weight_path", type=str, default='best_mAP', choices=ACCEPT_WEIGHT, help='Specific .pt weigth to eval. Default "best_mAP" choose the weight with the best val "mAP".')
 
     args = parser.parse_args()
     
